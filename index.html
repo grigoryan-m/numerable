@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <input type="text" name="main-input" onkeypress="return (event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57))" class="main-input" maxlength="3"/>
+    <button class="btn btn-primary guess" onclick="guess()">Guess!</button>
+
+    <table class="table">
+        <tr>
+            <th scope="col">/2</th>
+            <th scope="col">/3</th>
+            <th scope="col">/5</th>
+            <th scope="col">/7</th>
+            <th scope="col">/9</th>
+            <th scope="col">x...y</th>
+        </tr>
+        <!-- <tr>
+            <td scope="row">1</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+        </tr> -->
+    </table>
+    
+    <script src="main.js"></script>
+</body>
+</html>
